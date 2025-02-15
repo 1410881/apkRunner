@@ -9,5 +9,6 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="indrive">#add81a</color>
+    <color name="gray800">#424242</color>
 
 </resources>
