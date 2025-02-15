@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_ciudad">
+    <fragment
+        android:id="@+id/nav_splash"
+        android:name="pe.edu.senati.apkrunners.ui.Splash"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_nav_splash_to_nav_login"
+            app:destination="@id/nav_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="pe.edu.senati.apkrunners.ui.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_nav_login_to_nav_ciudad"
+            app:destination="@id/nav_ciudad" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_ciudad"
+        android:name="pe.edu.senati.apkrunners.ui.Ciudad"
+        android:label="fragment_ciudad"
+        tools:layout="@layout/fragment_ciudad" >
+        <action
+            android:id="@+id/action_nav_ciudad_to_nav_historial_Solicitudes"
+            app:destination="@id/nav_Solicitudes" />
+        <action
+            android:id="@+id/action_nav_ciudad_to_nav_entregas2"
+            app:destination="@id/nav_entregas" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_entregas"
+        android:name="pe.edu.senati.apkrunners.ui.Entregas"
+        android:label="fragment_entregas"
+        tools:layout="@layout/fragment_entregas" />
+    <fragment
+        android:id="@+id/nav_Solicitudes"
+        android:name="pe.edu.senati.apkrunners.ui.Solicitudes"
+        android:label="fragment_historial_solicitudes"
+        tools:layout="@layout/fragment_solicitudes" />
+</navigation>
